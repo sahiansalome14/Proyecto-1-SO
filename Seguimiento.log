@@ -1,0 +1,188 @@
+
+Proceso PID: 1 (Quantum = 4, Estado: Ejecutando)
+Estado ANTES: AX = 10, BX = 20, CX = 5
+Ejecutando instrucción (0): ADD AX, BX
+ Resultado: AX = 10 ADD 20 = 30
+Estado DESPUÉS de ejecutar:
+AX = 30, BX = 20, CX = 5
+----------------------------------------------
+Estado ANTES: AX = 30, BX = 20, CX = 5
+Ejecutando instrucción (1): SUB BX, 5
+ Resultado: BX = 20 SUB 5 = 15
+Estado DESPUÉS de ejecutar:
+AX = 30, BX = 15, CX = 5
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Proceso PID: 2 (Quantum = 6, Estado: Ejecutando)
+Estado ANTES: AX = 0, BX = 0, CX = 0
+Ejecutando instrucción (0): INC BX
+ Resultado: BX = 0 + 1 = 1
+Estado DESPUÉS de ejecutar:
+AX = 0, BX = 1, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 0, BX = 1, CX = 0
+Ejecutando instrucción (1): ADD AX, 3
+ Resultado: AX = 0 ADD 3 = 3
+Estado DESPUÉS de ejecutar:
+AX = 3, BX = 1, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 3, BX = 1, CX = 0
+Ejecutando instrucción (2): NOP
+Estado DESPUÉS de ejecutar:
+AX = 3, BX = 1, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 3, BX = 1, CX = 0
+Ejecutando instrucción (3): JMP 2
+ Saltando a la línea 2
+Estado DESPUÉS de ejecutar:
+AX = 3, BX = 1, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 3, BX = 1, CX = 0
+Ejecutando instrucción (2): NOP
+Estado DESPUÉS de ejecutar:
+AX = 3, BX = 1, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 3, BX = 1, CX = 0
+Ejecutando instrucción (3): JMP 2
+ Saltando a la línea 2
+Estado DESPUÉS de ejecutar:
+AX = 3, BX = 1, CX = 0
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Proceso PID: 3 (Quantum = 3, Estado: Ejecutando)
+Estado ANTES: AX = 15, BX = 0, CX = 0
+Ejecutando instrucción (0): ADD AX, 10
+ Resultado: AX = 15 ADD 10 = 25
+Estado DESPUÉS de ejecutar:
+AX = 25, BX = 0, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 25, BX = 0, CX = 0
+Ejecutando instrucción (1): INC AX
+ Resultado: AX = 25 + 1 = 26
+Estado DESPUÉS de ejecutar:
+AX = 26, BX = 0, CX = 0
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Proceso PID: 4 (Quantum = 5, Estado: Ejecutando)
+Estado ANTES: AX = 0, BX = 7, CX = 9
+Ejecutando instrucción (0): SUB BX, CX
+ Resultado: BX = 7 SUB 9 = -2
+Estado DESPUÉS de ejecutar:
+AX = 0, BX = -2, CX = 9
+----------------------------------------------
+Estado ANTES: AX = 0, BX = -2, CX = 9
+Ejecutando instrucción (1): INC BX
+ Resultado: BX = -2 + 1 = -1
+Estado DESPUÉS de ejecutar:
+AX = 0, BX = -1, CX = 9
+----------------------------------------------
+Estado ANTES: AX = 0, BX = -1, CX = 9
+Ejecutando instrucción (2): ADD CX, 4
+ Resultado: CX = 9 ADD 4 = 13
+Estado DESPUÉS de ejecutar:
+AX = 0, BX = -1, CX = 13
+----------------------------------------------
+Estado ANTES: AX = 0, BX = -1, CX = 13
+Ejecutando instrucción (3): JMP 7
+⚠️ Salto inválido a línea 7
+Estado DESPUÉS de ejecutar:
+AX = 0, BX = -1, CX = 13
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Proceso PID: 2 (Quantum = 6, Estado: Ejecutando)
+Estado ANTES: AX = 3, BX = 1, CX = 0
+Ejecutando instrucción (2): NOP
+Estado DESPUÉS de ejecutar:
+AX = 3, BX = 1, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 3, BX = 1, CX = 0
+Ejecutando instrucción (3): JMP 2
+⚠️ Límite de 2 saltos a línea 2 alcanzado.
+Estado DESPUÉS de ejecutar:
+AX = 3, BX = 1, CX = 0
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Proceso PID: 1 (Quantum = 4, Estado: Ejecutando)
+Estado ANTES: AX = 30, BX = 15, CX = 5
+Ejecutando instrucción (2): MUL CX, 2
+ Resultado: CX = 5 MUL 2 = 10
+Estado DESPUÉS de ejecutar:
+AX = 30, BX = 15, CX = 10
+----------------------------------------------
+Estado ANTES: AX = 30, BX = 15, CX = 10
+Ejecutando instrucción (3): INC AX
+ Resultado: AX = 30 + 1 = 31
+Estado DESPUÉS de ejecutar:
+AX = 31, BX = 15, CX = 10
+----------------------------------------------
+Estado ANTES: AX = 31, BX = 15, CX = 10
+Ejecutando instrucción (4): NOP
+Estado DESPUÉS de ejecutar:
+AX = 31, BX = 15, CX = 10
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Proceso PID: 3 (Quantum = 3, Estado: Ejecutando)
+Estado ANTES: AX = 26, BX = 0, CX = 0
+Ejecutando instrucción (2): MUL AX, 2
+ Resultado: AX = 26 MUL 2 = 52
+Estado DESPUÉS de ejecutar:
+AX = 52, BX = 0, CX = 0
+----------------------------------------------
+Estado ANTES: AX = 52, BX = 0, CX = 0
+Ejecutando instrucción (3): NOP
+Estado DESPUÉS de ejecutar:
+AX = 52, BX = 0, CX = 0
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+Proceso PID: 4 (Quantum = 5, Estado: Ejecutando)
+Estado ANTES: AX = 0, BX = -1, CX = 13
+Ejecutando instrucción (4): NOP
+Estado DESPUÉS de ejecutar:
+AX = 0, BX = -1, CX = 13
+----------------------------------------------
+
+Cambio de Contexto...
+
+Estado actual de los procesos:
+
+ Todos los procesos han finalizado.

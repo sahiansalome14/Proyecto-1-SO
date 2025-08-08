@@ -1,0 +1,5 @@
+ADD AX, BX
+SUB BX, 5
+MUL CX, 2
+INC AX
+NOP

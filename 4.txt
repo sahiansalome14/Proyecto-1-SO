@@ -1,0 +1,5 @@
+SUB BX, CX
+INC BX
+ADD CX, 4
+JMP 7
+NOP
