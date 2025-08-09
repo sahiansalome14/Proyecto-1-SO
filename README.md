@@ -8,8 +8,11 @@ Un simulador del algoritmo de planificación **Round Robin** implementado en C++
 * Kadiha Nahir Muhamad Orta
 * Mariamny Ramirez
 * Sahian Salome Gutierrez Ossa
+
 * **Sistema Operativo:** WSL Linux
+  
 * **Lenguaje de programación:** C++17
+  
 * **Herramientas:** Visual Studio Code
 
 ## Descripción del Proyecto
@@ -37,6 +40,8 @@ Este proyecto implementa un **simulador completo del algoritmo Round Robin** que
 ├── instrucciones.cpp       # Procesamiento y validación de instrucciones
 ├── instrucciones.h         # Header del manejo de instrucciones
 ├── proceso.h               # Estructura de datos del proceso
+├── 1.txt                   # Archivo con las instrucciones del proceso 1
+├── 2.txt                   # Archivo con las instrucciones del proceso 2
 └── procesos.txt            # Archivo de configuración de procesos
 ```
 
@@ -96,4 +101,5 @@ NOP
 - **Logging automático**: Archivo `Seguimiento.log` con trazabilidad completa
 - **Interfaz visual**: Tablas con estado actual de todos los procesos
 - **Límites de salto**: Máximo 2 saltos a la misma línea (previene bucles infinitos)
+
 
