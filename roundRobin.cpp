@@ -35,9 +35,19 @@ string procesarInstruccion(Proceso& proceso, const std::string& lineaInstruccion
     string restoLinea;
     getline(flujoTexto, restoLinea);
 
-    restoLinea.erase(remove(restoLinea.begin(), restoLinea.end(), ','), restoLinea.end());
+    // Quitar espacios al inicio y final
+    restoLinea.erase(0, restoLinea.find_first_not_of(" \t"));
+    restoLinea.erase(restoLinea.find_last_not_of(" \t") + 1);
+
+    // Reemplazar comas por espacios (no pegamos el número al registro)
+    replace(restoLinea.begin(), restoLinea.end(), ',', ' ');
+
+    // Leer parámetros
     istringstream flujoParametros(restoLinea);
     flujoParametros >> primerParametro >> segundoParametro;
+
+    primerParametro = convertirMayusculas(primerParametro);
+    segundoParametro = convertirMayusculas(segundoParametro);
 
     string resultadoOperacion = "";
     avanzarPC = true;
